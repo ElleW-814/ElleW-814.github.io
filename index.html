@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8"/>
+        <meta name="=viewport" content="width=device-width, initial-scale=1">
         <style>
             body {
-                background-color: turquoise;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-family: sans-serif;
+              margin: 0;
+            }
+            .container {
+              display: flex;
+              min-height: 100vh;
+              align-items: stretch;
+            }
+            .column1 {
+              background: black;
+              color: whitesmoke;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              flex: 0.5;
+            }
+            .column2 {
+              background: lightseagreen;
+              color: black;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: left;
+              flex: 2;
             }
             img {
                 display: block;
@@ -15,7 +39,7 @@
                 height: 350px;
             }
             a:link, a:visited {
-                background-color: gold;
+                background-color: dodgerblue;
                 color: white;
                 padding: 10px 10px;
                 text-align: center;
@@ -23,7 +47,7 @@
                 display: inline-block;
             }
             a:hover, a:active {
-                background-color: goldenrod;
+                background-color: rebeccapurple;
             }
             h1 {
                 border-left: 8px solid gold;
@@ -33,52 +57,64 @@
             }
             h2 {
                 text-align: center;
-                font-size: 14px;
+                font-size: 16px;
             }
             h3 {
-                font-size: 24px;
-                border-bottom: 2px dashed rebeccapurple;
+                font-size: 30px;
+                border-bottom: 4px dashed gold;
             }
             h4 {
-                font-size: 24px;
-                border-bottom: 2px dashed rebeccapurple;
+                font-size: 30px;
+                border-bottom: 4px dashed gold;
             }
             h5 {
-                font-size: 24px;
-                border-bottom: 2px dashed rebeccapurple;
-            }          
+                font-size: 30px;
+                border-bottom: 4px dashed gold;
+            }  
         </style>
     </head>
     <body>
-        <title>ElleW-814's Life</title>
-        <h1 id="name">ElleW-814's Page</h1>
-        <img src="IMG_0422.png" alt="bitmoji">
-        <h2 id="intro">Bio: I'm learning to code.</h2>
-        <h3>
-            Skills
-        </h3>
-        <ul style="list-style-type:square;">
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-          </ul>
-        <h4>
-            Experience
-        </h4>
-        <ul style="list-style-type:square;">
-            <li>CMA CGM</li>
-            <li>Geico</li>
-            <li>Cox Communications</li>
-            <li>Verizon Wireless</li>
-          </ul>
-        <h5>
-            Interests
-        </h5>
-        <ul style="list-style-type:square;">
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
-          </ul>
-        <a href="https://www.linkedin.com/in/lakendrawilliams/" id="linkedin">My LinkedIn</a>
+        <div class="container">
+            <div class="column1" id="column1">
+                <img src="IMG_0422.png" alt="bitmoji">
+                <h1 id="name">ElleW-814</h1>
+                <h2 id="bio">Super Short Bio:</h2>
+                    <p1 id="descript"> 
+                        I was born in California.<br>
+                        Raised in Virginia Beach.<br>
+                        I'm currently studying Software Development.<br>
+                    </p1>
+                    <br>
+                    <br>
+                <a href="https://www.linkedin.com/in/lakendrawilliams/" 
+                id="linkedin" target="_blank">My LinkedIn
+                </a>
+            </div>
+            <div class="column2" id="column2">
+               <h3 id="skills">Skills</h3>
+               <ul style="list-style-type:square; font-size:20px;">
+                <li>Customer Service</li>
+                <li>Sales</li>
+                <li>Management</li>
+              </ul>
+            <h4>
+                Experience
+            </h4>
+            <ul style="list-style-type:square; font-size:20px;">
+                <li>CMA CGM</li>
+                <li>Geico</li>
+                <li>Cox Communications</li>
+                <li>Verizon Wireless</li>
+              </ul>
+            <h5>
+                Current Fixations
+            </h5>
+            <ul style="list-style-type:square; font-size:20px;">
+                <li>My Puppy</li>
+                <li>CSS</li>
+                <li>Stardew Valley</li>
+              </ul>
+            </div>
+        </div>
     </body>
 </html>
